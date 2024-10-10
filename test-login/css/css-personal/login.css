@@ -1,0 +1,8 @@
+body{
+    background: #806376;
+    background: linear-gradient(to right, #101C5A, #806376);
+}
+.bg{
+    background-image: url(../../img/anime-night-sky-illustration.jpg);
+    background-position: center center;
+}

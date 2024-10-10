@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Formulario de Registro
+    </h1>
+    <form action="register.php" method="post">
+        <label for="iNombre">Nombre Completo</label><br>
+        <input type="text" name="nombreC" id="iNombre" required>
+        <br>
+        <label for="iCorreo">Correo Electronico</label><br>
+        <input type="email" name="correo" id="iCorreo" required>
+        <br>
+        <label for="iContraseña">Contraseña</label><br>
+        <input type="password" name="contraseña" id="iContraseña" required>
+        <br>
+        <label for="iEdad">Edad</label><br>
+        <input type="number" name="edad" id="iEdad" min="0" max="120" required>
+        <br>
+        <label for="iFecha">Fecha de Nacimiento</label><br>
+        <input type="date" name="fecha" id="iFecha" required>
+        <br>
+        <fieldset>
+            <legend>Genero</legend>
+            <input type="radio" id="iMasculino" name="genero" value="masculino">
+            <label for="iMasculino">Masculino</label><br>
+            <input type="radio" id="iFemenino" name="genero" value="femenino">
+            <label for="iFemenino">Femenino</label><br>
+            <input type="radio" id="iOtros" name="genero" value="otros" checked>
+            <label for="iOtros">Otros</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Intereses</legend>
+            <input type="checkbox" id="iJugar" name="interes1" value="jugar">
+            <label for="iJugar">Jugar</label><br>
+            <input type="checkbox" id="iCocinar" name="interes2" value="cocinar">
+            <label for="iCocinar">Cocinar</label><br>
+            <input type="checkbox" id="iLeer" name="interes3" value="leer">
+            <label for="iLeer">Leer</label>
+        </fieldset>
+        <br>
+        <label for="iFoto">Foto de perfil</label><br>
+        <input type="file" name="foto" id="iFoto">
+        <br>
+        <label for="iColor">Color Preferido</label><br>
+        <input type="color" name="color" id="iColor">
+        <br>
+        <label for="iNivel">Nivel de Satisfacción</label><br>
+        <input type="range" name="nivel" id="iNivel">
+        <br>
+        <input type="submit" value="Registrarse">
+    </form>
+    <a href="index.html">Iniciar seccion</a>
+</body>
+</html>
